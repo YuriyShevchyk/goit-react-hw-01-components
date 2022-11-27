@@ -1,33 +1,33 @@
 import PropTypes from 'prop-types';
+import { ProfileContainer, ProfileDescription, Avatar, UserInfo, UserName, Stats, Label, Quantity} from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => (
-<div class="profile">
-<div class="description">
-  <img
-    src="https://cdn-icons-png.flaticon.com/512/1077/1077012.png"
-    alt="User avatar"
-    class="avatar"
+<ProfileContainer>
+<ProfileDescription>
+  <Avatar
+    src={avatar}
+    alt={username}
   />
-  <p class="name">Petra Marica</p>
-  <p class="tag">@pmarica</p>
-  <p class="location">Salvador, Brasil</p>
-</div>
+  <UserName>{username}</UserName>
+  <UserInfo>{tag}</UserInfo>
+  <UserInfo>{location}</UserInfo>
+</ProfileDescription>
 
-<ul class="stats">
+<Stats>
   <li>
-    <span class="label">Followers</span>
-    <span class="quantity">1000</span>
+    <Label>Followers</Label>
+    <Quantity>{stats.followers}</Quantity>
   </li>
   <li>
-    <span class="label">Views</span>
-    <span class="quantity">2000</span>
+    <Label>Views</Label>
+    <Quantity>{stats.views}</Quantity>
   </li>
   <li>
-    <span class="label">Likes</span>
-    <span class="quantity">3000</span>
+    <Label>Likes</Label>
+    <Quantity>{stats.likes}</Quantity>
   </li>
-</ul>
-</div> )
+</Stats>
+</ProfileContainer> )
 
 
 Profile.propTypes = {
