@@ -5,7 +5,7 @@ import {Item, FriendName, FriendAvatar, FriendStatus} from 'components/FriendLis
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <Item>
-      <FriendStatus>{isOnline}</FriendStatus>
+      <FriendStatus isOnline={isOnline}></FriendStatus>
       <FriendAvatar src={avatar} alt="User avatar" width="48" />
       <FriendName>{name}</FriendName>
     </Item>

@@ -18,13 +18,16 @@ export const TransactionTable = styled.table`
     padding: 16px 0;
     text-transform: uppercase;
   
-  td {
+
+    
+  tr:nth-child(even) {
+    background: #ecf1f4;  
+`; 
+
+export const ItemInfo = styled.td`
     border-bottom: 1px solid #e4e9f0;
     border-right: 1px solid #e4e9f0;
     color: #768696;
     padding: 16px;
     text-align-last: center;
-    
-  tr:nth-child(even) {
-    background: #ecf1f4;  
-`;  
+`;

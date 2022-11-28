@@ -34,9 +34,7 @@ export const FriendStatus = styled.span`
   margin: 0 8px;
   width: 16px;
   background-color: ${props => {
-    switch (props.isOnline ) {
-        case "true": return 'green';
-        case "false": return 'red';
+    return props.isOnline ? 'green' : 'red'
     }
   }};
 `;
