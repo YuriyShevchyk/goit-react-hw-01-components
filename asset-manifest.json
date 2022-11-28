@@ -1,10 +1,13 @@
 {
   "files": {
-    "main.js": "/YuriyShevchyk/goit-react-hw-01-components.git/static/js/main.76f92716.js",
+    "main.css": "/YuriyShevchyk/goit-react-hw-01-components.git/static/css/main.9ea11082.css",
+    "main.js": "/YuriyShevchyk/goit-react-hw-01-components.git/static/js/main.329fca99.js",
     "index.html": "/YuriyShevchyk/goit-react-hw-01-components.git/index.html",
-    "main.76f92716.js.map": "/YuriyShevchyk/goit-react-hw-01-components.git/static/js/main.76f92716.js.map"
+    "main.9ea11082.css.map": "/YuriyShevchyk/goit-react-hw-01-components.git/static/css/main.9ea11082.css.map",
+    "main.329fca99.js.map": "/YuriyShevchyk/goit-react-hw-01-components.git/static/js/main.329fca99.js.map"
   },
   "entrypoints": [
-    "static/js/main.76f92716.js"
+    "static/css/main.9ea11082.css",
+    "static/js/main.329fca99.js"
   ]
 }
