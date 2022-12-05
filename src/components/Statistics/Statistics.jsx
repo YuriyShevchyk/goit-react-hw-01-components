@@ -11,14 +11,15 @@ function randomColor() {
 
 export const Statistics = ({ title, stats }) => (
   <StatSection>
-    <Title>{title}</Title>
+    {title ? <Title>{title}</Title> : ''}
+
 
     <StatList>
-      {stats.map(stat => {
+      {stats.map(({id, label, percentage}) => {
         return (
-          <li key={stat.id} style={{ backgroundColor: randomColor() }}>
-            <Label>{stat.label}</Label>
-            <Quantity>{stat.percentage}%</Quantity>
+          <li key={id} style={{ backgroundColor: randomColor() }}>
+            <Label>{label}</Label>
+            <Quantity>{percentage}%</Quantity>
           </li>
         );
       })}

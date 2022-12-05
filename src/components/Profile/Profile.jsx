@@ -13,6 +13,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => (
   <UserInfo>{location}</UserInfo>
 </ProfileDescription>
 
+
 <Stats>
   <li>
     <Label>Followers</Label>
